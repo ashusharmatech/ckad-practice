@@ -25,4 +25,33 @@ that the volume is at /opt/q2/data/ on the cluster's node.
 - Get information about the pod, save output to a file named /tmp/pod-q1-nginx.out.
 - Get pod logs, save to a file named /tmp/q1-nginx.log.
 - Execute command curl localhost:80 on the nginx pod, save output to a file named /tmp/q1-cmd.out.
-- Set namespace falcon as the default namespace. View config to verify it and save output to a fil named /tmp/config-namespace.out.
+- Set namespace falcon as the default namespace. View config to verify it and save output to a fil named /tmp/config-namespace.out
+
+## Question 4
+
+- Create a deployment with image nginx:1.7.8, called q2-nginx, having 2 replicas, defining port 80 as the port that this container exposes.
+- Check how the deployment rollout is going, save output to a file named /tmp/deployment-q2-nginx.out.
+- Scale the deployment to 5 replicas.
+
+
+## Question 5
+
+- Create a configmap called appconfig with two properties: prop1=value1, prop2=value2.
+- Display configmap appconfig as yaml and save output to a file called /tmp/appconfig.yaml.
+- Create a new pod with image nginx that loads the value from prop1 in an env variable called option.
+- Run command in pod nginx to show the value of environment variable option, save output to a file called /tmp/q3-nginx-env.out.
+
+## Question 6 
+- Create an nginx pod with a liveness probe that runs the command ls.
+- Retrieve pod's probe status and save output to a file named /tmp/liveness-probe.out.
+
+## Question 7
+- Create a new service account called myuser.
+- Create an nginx pod that uses myuser as a service account.
+- Get information about pod nginx to verify that the token associated with the service account myuser is mounted, save output to a file named /tmp/pod-q4-nginx.out.
+
+## Question 8
+- Create a configmap called appconfig with two properties: prop1=value1, prop2=value2.
+- Display configmap appconfig as yaml and save output to a file called /tmp/appconfig.yaml.
+- Create a new pod with image nginx that loads the value from prop1 in an env variable called option.
+- Run command in pod nginx to show the value of environment variable option, save output to a file called /tmp/q3-nginx-env.out.
