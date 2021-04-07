@@ -18,3 +18,11 @@ Acct=Finance
 that the volume is at /opt/q2/data/ on the cluster's node. 
 - The configuration should specify the access mode of ReadWriteOnce . 
 - It should define the StorageClass name q2 for the PersistentVolume , which will be used to bind PersistentVolumeClaim requests to this PersistenetVolume.
+
+## Question 3
+
+- Create a namespace called falcon and a pod with image nginx called q1-nginx in this namespace, and allow traffic on port 80.
+- Get information about the pod, save output to a file named /tmp/pod-q1-nginx.out.
+- Get pod logs, save to a file named /tmp/q1-nginx.log.
+- Execute command curl localhost:80 on the nginx pod, save output to a file named /tmp/q1-cmd.out.
+- Set namespace falcon as the default namespace. View config to verify it and save output to a fil named /tmp/config-namespace.out.
